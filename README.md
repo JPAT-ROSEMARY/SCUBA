@@ -5,8 +5,8 @@ Description
 =
 
 A research project aims at learning static and dynamic bytecode analysis techniques using [ASM] (http://asm.ow2.org/) and [BCEL] (https://commons.apache.org/proper/commons-bcel/) frameworks and applying a couple of software engineering principles 
-including, MVC architecture paradigm, IoC concept and a couple of Design Patterns plus to TDD with Mockito, JMock & Hamcrest. It is an application on how to make an extensible, reusable & configurable software system.
-MoreoverThe project is used for a couple of experiments to evaluate and compare both ASM & BCEL frameworks.
+including, MVC architecture paradigm, IoC concept and a couple of Design Patterns. I also practiced TDD with Mockito, JMock & Hamcrest. It is an application on how to make an extensible, reusable & configurable software system.
+Moreover, the project was used for a couple of experiments to evaluate and compare both ASM & BCEL frameworks.
 The results of the experiments are accompanied under `./org.jpat.scuba.ui/experiments/`.
 
 Why Utilizing Two Bytecode Engineering Frameworks
