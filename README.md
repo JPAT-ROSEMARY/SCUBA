@@ -69,7 +69,7 @@ SCUBA input
 -
 * [1] Configurations file; check for an example `./org.jpat.scuba.ui/benchmark.examples/user.benchmark.properties`. 
 	Also, `./org.jpat.scuba.ui/src/main/resources/org/jpat/scuba/ui/benchmark/benchmark.properties`
-	If you run it with Gradle, then it will consume the second properties file automatically
+	If you run it with Gradle, then it will consume the second properties file automatically.
 	Those two properties files explain to you the rest of the story.
 
 * [2] Input bytecode archive (only two formats accepted Zip and Jar).
