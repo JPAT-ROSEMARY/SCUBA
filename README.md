@@ -9,7 +9,7 @@ including, MVC architecture paradigm, IoC concept and a couple of Design Pattern
 MoreoverThe project is used for a couple of experiments to evaluate and compare both ASM & BCEL frameworks. 
 The results of the experiments are accompanied under `./org.jpat.scuba.ui/experiments/`.
 
-Why utilizing two Bytecode Engineering Frameworks
+Why Utilizing Two Bytecode Engineering Frameworks
 --
 
 The goal was in the first place to compare those two frameworks to each other. I learned by experimenting with SCUBA, analysing and instrumenting many Java open source projects, that ASM is about 3 times faster than BCEL in average. 
@@ -23,7 +23,7 @@ Future Work
 Take the potentials of ASM Framework to its maximum to check the intercommunications patterns of Object Oriented software systems against certain criterion.
 Another feature is to check the source code structure against certain Architecture paradigm like MVC. 
 
-To what extent
+To What Extent
 --
 Basically, the project started early 2012 for research & learning objectives.
 
@@ -35,26 +35,46 @@ As mentioned, this project is made for different purposes. However, SCUBA demons
 
 How SCUBA can be Useful
 --
-Introduction on bytecode engineering and a bunch of practical examples on software engineering and object oriented design and programming. 
+Introduction on bytecode engineering and a bunch of practical examples on software engineering and object oriented design and programming principles. 
 
 
-How to get involved
+How to Get Involved
 --
 There are a couple of Test Case classes in each project. These test cases will give you a complete idea on the structure and logical connection of the project's modules.
 I will be so glad to discuss your suggestions and ideas.
 
 
 
-How To run
+How to Run
+=
+
+* Execute the command Gradle clean compileJava build run in `./master` project
+
+* In eclipse: consume `./org.jpat.scuba/eclipse.launch/Application.launch` with "Run Configurations..."
+
+Prerequisites
 --
+SCUBA assumes the machine is configured as follows:
+* [1] Jdk 8
+* [2] Gradle 2.4
+* [3] Development IDE like eclipse - Kepler with Jdk 8 support or Luna
 
-* Execute the command Gradle clean compileJava build run in `./master` project.
+Entry Point
+--
+* Project driver:  `./org.jpat.scuba.ui`
+* Main class: `org.jpat.scuba.ui.app.Application`; with the relative path as `./org.jpat.scuba.ui/src/main/java/org/jpat/scuba/ui/app/Application.java`
+* Test cases will summarise the entry and internal structure
 
-* Eclipse, consume `./org.jpat.scuba/eclipse.launch/Application.launch` with "Run Configurations...".
+SCUBA input
+* [1] Configurations file; check for an example `./org.jpat.scuba.ui/benchmark.examples/user.benchmark.properties`. Also `./org.jpat.scuba.ui/src/main/resources/org/jpat/scuba/ui/benchmark/benchmark.properties`
+	If you run it with Gradle, then it will consume the second properties file automatically
+	Those two properties files explain to you the rest of the story.
+
+* [2] Input bytecode archive (only two formats accepted Zip and Jar).
+	The prepared properties files above already pick some examples located in `/org.jpat.scuba.ui/benchmark.examples/java` and `/org.jpat.scuba.ui/benchmark.examples/scala`.
 
 Issues
 --
-(1) BCEL Framework used is 5.2 which has not been updated yet to consider Java 8.
-(2) Enhancement is required for the Concrete Exceptions in the common project
-(3) FinBugs tool integration is not yet provided with gradle build
-
+* (1) BCEL Framework used is 5.2 which has not been updated yet to consider Java 8.
+* (2) Enhancement is required for the Concrete Exceptions in the common project
+* (3) FinBugs tool integration is not yet provided with gradle build
