@@ -77,4 +77,6 @@ Issues
 --
 * (1) BCEL Framework used is 5.2 which has not been updated yet to consider Java 8.
 * (2) Enhancement is required for the Concrete Exceptions in the common project
-* (3) FinBugs tool integration is not yet provided with gradle build
+* (3) Enhancement to the model in general, especially the Stats sub-model part
+* (4) A couple of FindBugs rule violations need to be addressed
+* (5) More PMD rules need to be covered - provide gradle PMD plugin configurations in `./master/build.gradle`
