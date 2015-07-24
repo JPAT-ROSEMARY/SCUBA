@@ -4,9 +4,9 @@ Simple CUstomisable Bytecode Analysis tool
 Description
 =
 
-A research project aims at learning static and dynamic bytecode analysis techniques using ASM & BCEL frameworks and applying a couple of software engineering principles 
+A research project aims at learning static and dynamic bytecode analysis techniques using [ASM] (http://asm.ow2.org/) and [BCEL] (https://commons.apache.org/proper/commons-bcel/) frameworks and applying a couple of software engineering principles 
 including, MVC architecture paradigm, IoC concept and a couple of Design Patterns plus to TDD with Mockito, JMock & Hamcrest. It is an application on how to make an extensible, reusable & configurable software system.
-MoreoverThe project is used for a couple of experiments to evaluate and compare both ASM & BCEL frameworks. 
+MoreoverThe project is used for a couple of experiments to evaluate and compare both ASM & BCEL frameworks.
 The results of the experiments are accompanied under `./org.jpat.scuba.ui/experiments/`.
 
 Why Utilizing Two Bytecode Engineering Frameworks
@@ -55,9 +55,9 @@ How to Run
 Prerequisites
 --
 SCUBA assumes the machine is configured as follows:
-* [1] Jdk 8
+* [1] Java 8
 * [2] Gradle 2.4
-* [3] Development IDE like eclipse - Kepler with Jdk 8 support or Luna
+* [3] Development IDE like eclipse - Kepler with Java 8 support or Luna
 
 Entry Point
 --
@@ -77,7 +77,7 @@ SCUBA input
 
 Issues
 --
-* (1) BCEL Framework used is 5.2 which has not been updated yet to consider Java 8.
+* (1) BCEL Framework library used by SCUBA is release version 5.2 which has not been updated yet to consider Java 8.
 * (2) Enhancement is required for the Concrete Exceptions in the common project
 * (3) Enhancement to the model in general, especially the Stats sub-model part
 * (4) A couple of FindBugs rule violations need to be addressed
