@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SCUBA
+Bundle-SymbolicName: org.jpat.scuba.analysisprovider.dynamic.asm
+Bundle-Version: 1.0.0
+Bundle-Vendor: JPAT ROSEAMRY
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.jpat.scuba.core;bundle-version="1.0.0",
+ org.jpat.scuba.support.languages;bundle-version="1.0.0",
+ org.jpat.scuba.common;bundle-version="1.0.0",
+ org.jpat.scuba.external.asm;bundle-version="1.0.0",
+ org.jpat.scuba.external.slf4j,
+ org.jpat.scuba.external.truezip,
+ org.jpat.scuba.analysisprovider.static.asm
+Export-Package: org.jpat.scuba.analysisprovider.dynamic.asm.command.system

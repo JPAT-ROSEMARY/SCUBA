@@ -1,0 +1,8 @@
+group = 'org.jpat.scuba'
+version = '1.0.0'
+
+dependencies {
+    compile project(':org.jpat.scuba.core')
+    compile project(':org.jpat.scuba.support.languages')
+    compile files('../org.jpat.scuba.external.asm/asm-5.0.4/lib/all/asm-debug-all-5.0.4.jar')
+}

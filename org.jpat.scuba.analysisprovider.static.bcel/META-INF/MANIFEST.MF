@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: BCEL-based Static Analysis
+Bundle-SymbolicName: org.jpat.scuba.analysisprovider.static.bcel
+Bundle-Version: 1.0.0
+Bundle-Vendor: JPAT ROSEMARY
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.jpat.scuba.core;bundle-version="1.0.0",
+ org.jpat.scuba.external.bcel;bundle-version="1.0.0",
+ org.jpat.scuba.support.languages,
+ org.jpat.scuba.common;bundle-version="1.0.0",
+ org.jpat.scuba.external.truezip;bundle-version="1.0.0",
+ org.jpat.scuba.external.slf4j
+Export-Package: org.jpat.scuba.analysisprovider.statica.bcel.command.system,
+ org.jpat.scuba.analysisprovider.statica.bcel.controller.analysis,
+ org.jpat.scuba.analysisprovider.statica.bcel.foundation

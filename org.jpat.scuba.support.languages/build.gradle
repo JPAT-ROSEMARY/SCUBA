@@ -1,0 +1,7 @@
+group = 'org.jpat.scuba'
+version = '1.0.0'
+
+dependencies {
+    compile project(':org.jpat.scuba.common')
+    compile project(':org.jpat.scuba.core')
+}

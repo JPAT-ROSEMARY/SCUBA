@@ -1,0 +1,10 @@
+build/
+build.eclipse/
+build.ant/
+bin/
+RemoteSystemsTempFiles/
+.directory
+.gradle/
+.settings/
+*.log
+.metadata/

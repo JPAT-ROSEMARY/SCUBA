@@ -1,0 +1,54 @@
+(0) 2 make your working directory a git repository - non-bare repo (repository with a working directory)
+    a. locate yourself in your root project directory
+    b. execute the following command
+    
+    rosemary@kali:~/JPAT/SCUBA$ git init
+
+(1) make your .gitignore configurations 
+    at same directory make a new file named '.gitignore' and add the following and plus more you might wish
+
+    build/
+    build.eclipse/
+    build.ant/
+    bin/
+    RemoteSystemsTempFiles/
+    .directory
+    .gradle/
+    .settings/
+    *.log
+    .metadata/
+
+(2) Add the contents you want to control as follows
+    git add *.*
+(3) make sure that there is no folder is missed, for example a non-dev project like master/, favourites/ and .gitignore need to be added explicitly after executing git add *.*
+    git add master/
+    git add .gitignore
+    git add favourites/
+    
+
+(4) commit your staged files
+    git commit -m "initialized a non-bare repo - a repo with a working directory"
+    
+Now, you might need to instantiate a Server Git Repo - bare repo
+
+(5) Suppose you want your server git repo on some local disk 
+    
+    (a) Make the directory x.git in some path as follows
+    
+    mkdir scuba.git
+    cd suba.git
+    git --bare init
+
+(6) Now, go back to your working directory (non-bare repo)
+    (a) add a remote git repo - which is the one we made in step 5
+    
+    git remote add origin file:///path/to/scuba.git
+    
+    rosemary@kali:~/scrap$ git remote add origin file:///home/rosemary/repo/JPAT/scuba.git
+    
+    
+(7) You are ready 2 push your source code to the new Server git repo, as follows
+    git push origin master
+    
+    rosemary@kali:~/scrap$ git push origin master
+    

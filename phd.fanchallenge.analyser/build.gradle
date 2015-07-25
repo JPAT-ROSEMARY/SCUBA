@@ -1,0 +1,49 @@
+apply plugin: 'application'
+
+group = 'phd.fanchallenge.analyser'
+version = '1.0.0'
+
+mainClassName = 'phd.fanchallenge.analyser.FANChallengeAnalyser'
+
+dependencies {
+
+    compile files('../org.jpat.scuba.external.slf4j/slf4j-1.7.12/slf4j-api-1.7.12.jar')
+    compile files('../org.jpat.scuba.external.slf4j/logback-1.1.3/logback-core-1.1.3.jar')
+    compile files('../org.jpat.scuba.external.slf4j/logback-1.1.3/logback-classic-1.1.3.jar')
+    compile files('../org.jpat.scuba.external.apache.commons/apache.commons.libs/io/commons-io-2.4.jar')
+}
+
+jar {
+    manifest.attributes provider: 'gradle @ JPAT SCUBA'
+    manifest.attributes 'Main-Class' : 'phd.fanchallenge.analyser.FANChallengeAnalyser'
+    manifest.attributes 'Assembled-On': new Date()
+    manifest.attributes 'class-Path':  configurations.compile.collect{it.getName()}.join(' ')
+}
+
+task copyFANChallengeLibs(type: Copy) {
+
+    // Dedicated for instrumenting Sablecc jar with SCUBA 
+    // 2 be able to test the instrumented sablecc jar after SCUBA instrumented it
+    // run this gradle task which will include the following copy tasks
+    // These tasks will copy the FANChallenge runtime Analyser which instrumented inside the Sablecc with SCUBA Instrumentation process
+    // Plus to the dependency libs inclduign Slf4j and logback necessary jars
+
+    // $Note the destination directory is absolute path!
+    // That this works on Unix-Like systems; If you are using Windows OS you need to change the absolute path 
+    // (1) copy the runtime FANChallenge Analyser jar
+
+    from './build/libs'
+    into '/home/rosemary/.SCUBA/instrumented'
+
+    // (2) copy Slf4j libs
+    
+    from ('../org.jpat.scuba.external.slf4j/slf4j-1.7.12/slf4j-api-1.7.12.jar') 
+    from ('../org.jpat.scuba.external.slf4j/logback-1.1.3/logback-core-1.1.3.jar')
+    from ('../org.jpat.scuba.external.slf4j/logback-1.1.3/logback-classic-1.1.3.jar')
+    into '/home/rosemary/.SCUBA/instrumented'
+
+    // (3) copy Sablecc3x.sablecc3x Input File
+
+    from ('../org.jpat.scuba.ui/benchmark.examples/java/sablecc/sablecc-3x.sablecc3')
+    into '/home/rosemary/.SCUBA/instrumented'
+    }

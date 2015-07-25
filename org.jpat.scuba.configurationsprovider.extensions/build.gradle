@@ -1,0 +1,9 @@
+group = 'org.jpat.scuba'
+version = '1.0.0'
+
+dependencies {
+    compile project(':org.jpat.scuba.core')
+    compile files('../org.jpat.scuba.external.apache.commons/apache.commons.libs/configuration/commons-configuration-1.10.jar')
+    compile fileTree(dir: '../org.jpat.scuba.external.apache.commons/apache.commons.libs/lang', include: '*.jar')
+    compile files('../org.jpat.scuba.external.apache.commons/apache.commons.libs/logging/commons-logging-1.2.jar')
+}

@@ -1,0 +1,8 @@
+group = 'org.jpat.scuba'
+version = '1.0.0'
+
+dependencies {
+    compile project(':org.jpat.scuba.core')
+    compile project(':org.jpat.scuba.support.languages')
+    compile project(':org.jpat.scuba.analysisprovider.static.bcel')
+}

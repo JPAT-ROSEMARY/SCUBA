@@ -1,0 +1,8 @@
+group = 'org.jpat.scuba'
+version = '1.0.0'
+
+dependencies {
+    compile project(':org.jpat.scuba.core')
+    compile project(':org.jpat.scuba.support.languages')
+    compile files('../org.jpat.scuba.external.bcel/bcel-5.2/lib/bcel-5.2.jar')
+}

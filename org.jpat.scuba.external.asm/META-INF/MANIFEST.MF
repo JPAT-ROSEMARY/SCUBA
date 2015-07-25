@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ASM Bytecode Engineering Framework
+Bundle-SymbolicName: org.jpat.scuba.external.asm
+Bundle-Version: 1.0.0
+Bundle-Vendor: JPAT ROSEMARY
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ClassPath: asm-5.0.4/lib/all/asm-debug-all-5.0.4.jar
+Export-Package: org.objectweb.asm,
+ org.objectweb.asm.commons,
+ org.objectweb.asm.tree,
+ org.objectweb.asm.tree.analysis,
+ org.objectweb.asm.util

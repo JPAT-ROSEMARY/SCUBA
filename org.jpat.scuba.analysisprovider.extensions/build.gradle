@@ -1,0 +1,11 @@
+group = 'org.jpat.scuba'
+version = '1.0.0'
+
+dependencies {
+    compile project(':org.jpat.scuba.core')
+    compile project(':org.jpat.scuba.analysisprovider.static.asm')
+    compile project(':org.jpat.scuba.analysisprovider.static.asm.scala')
+    compile project(':org.jpat.scuba.analysisprovider.dynamic.asm')
+    compile project(':org.jpat.scuba.analysisprovider.static.bcel')
+    compile project(':org.jpat.scuba.analysisprovider.dynamic.bcel')
+}

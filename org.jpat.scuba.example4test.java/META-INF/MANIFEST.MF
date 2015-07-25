@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Benchmark Example 4 Test purposes
+Bundle-SymbolicName: org.jpat.scuba.example4test.java;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Vendor: JPAT ROSEMARY
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

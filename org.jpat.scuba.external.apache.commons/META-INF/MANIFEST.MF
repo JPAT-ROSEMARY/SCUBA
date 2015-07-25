@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache Commons libraries
+Bundle-SymbolicName: org.jpat.scuba.external.apache.commons;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-ClassPath: apache.commons.libs/configuration/commons-configuration-1.10.jar,
+ apache.commons.libs/lang/commons-lang3-3.4.jar,
+ apache.commons.libs/logging/commons-logging-1.2.jar,
+ apache.commons.libs/io/commons-io-2.4.jar,
+ apache.commons.libs/lang/commons-lang-2.6.jar
+Bundle-Vendor: JPAT ROSEMARY
+Export-Package: org.apache.commons.configuration,
+ org.apache.commons.configuration.beanutils,
+ org.apache.commons.configuration.event,
+ org.apache.commons.configuration.interpol,
+ org.apache.commons.configuration.plist,
+ org.apache.commons.configuration.reloading,
+ org.apache.commons.configuration.resolver,
+ org.apache.commons.configuration.tree,
+ org.apache.commons.configuration.tree.xpath,
+ org.apache.commons.configuration.web,
+ org.apache.commons.io,
+ org.apache.commons.lang.exception,
+ org.apache.commons.lang3,
+ org.apache.commons.lang3.exception,
+ org.apache.commons.logging
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

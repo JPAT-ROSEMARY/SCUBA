@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Scala
+Bundle-SymbolicName: org.jpat.scuba.example4test.scala;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Vendor: JPAT ROSEMARY
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

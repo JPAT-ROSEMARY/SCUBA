@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Extensions
+Bundle-SymbolicName: org.jpat.scuba.analysisprovider.extensions;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Vendor: JPAT ROSEMARY
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.jpat.scuba.core;bundle-version="1.0.0",
+ org.jpat.scuba.analysisprovider.static.asm;bundle-version="1.0.0",
+ org.jpat.scuba.analysisprovider.dynamic.asm;bundle-version="1.0.0",
+ org.jpat.scuba.analysisprovider.static.bcel;bundle-version="1.0.0",
+ org.jpat.scuba.analysisprovider.dynamic.bcel;bundle-version="1.0.0",
+ org.jpat.scuba.analysisprovider.static.asm.scala;bundle-version="1.0.0"
+Export-Package: org.jpat.scuba.system

@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: UI
+Bundle-SymbolicName: org.jpat.scuba.ui;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Vendor: JPAT ROSEMARY
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.jpat.scuba.analysisprovider.dynamic.asm;bundle-version="1.0.0",
+ org.jpat.scuba.analysisprovider.dynamic.bcel;bundle-version="1.0.0",
+ org.jpat.scuba.analysisprovider.extensions;bundle-version="1.0.0",
+ org.jpat.scuba.analysisprovider.static.asm;bundle-version="1.0.0",
+ org.jpat.scuba.analysisprovider.static.bcel;bundle-version="1.0.0",
+ org.jpat.scuba.common;bundle-version="1.0.0",
+ org.jpat.scuba.configurationsprovider.extensions;bundle-version="1.0.0",
+ org.jpat.scuba.core;bundle-version="1.0.0",
+ org.jpat.scuba.external.apache.commons;bundle-version="1.0.0",
+ org.jpat.scuba.external.asm;bundle-version="1.0.0",
+ org.jpat.scuba.external.bcel;bundle-version="1.0.0",
+ org.jpat.scuba.external.jmock;bundle-version="1.0.0",
+ org.jpat.scuba.external.mockito;bundle-version="1.0.0",
+ org.jpat.scuba.external.slf4j;bundle-version="1.0.0",
+ org.jpat.scuba.external.truezip;bundle-version="1.0.0",
+ org.jpat.scuba.support.languages;bundle-version="1.0.0"

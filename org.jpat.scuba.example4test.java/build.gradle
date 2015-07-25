@@ -1,0 +1,19 @@
+apply plugin: 'application'
+
+group = 'org.jpat.scuba.example4test'
+version = '1.0.0'
+
+mainClassName = 'org.jpat.scuba.example4test.java.simpleinterface.Example'
+
+jar {
+    manifest.attributes provider: 'gradle @ JPAT SCUBA'
+    manifest.attributes 'Main-Class' : 'org.jpat.scuba.example4test.java.simpleinterface.Example'
+    manifest.attributes 'Assembled-On': new Date()
+    manifest.attributes 'class-Path':  configurations.compile.collect{it.getName()}.join(' ')
+}
+
+task copyIntoBenchmarkExamples (type: Copy) {
+
+     from './build/libs'
+     into '../org.jpat.scuba.ui/benchmark.examples/java'
+}

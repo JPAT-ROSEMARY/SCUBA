@@ -1,0 +1,17 @@
+<configuration debug="false" scan="true">
+
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+		<file>${user.home}/.SCUBA/fanchallenge-ng.log</file>
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<Pattern>%date %level [%thread{20}|%logger] %msg%n</Pattern>
+		</encoder>
+	</appender>
+
+	<!-- debugging info needed for Application context functionality-->
+	<logger name="org.jpat.scuba.ui.app.Application" level="DEBUG" />
+
+	<root level="INFO">
+		<appender-ref ref="CONSOLE" />
+	</root>
+
+</configuration>

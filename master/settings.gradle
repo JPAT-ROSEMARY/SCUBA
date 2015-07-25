@@ -1,0 +1,23 @@
+include 'org.jpat.scuba.common',
+        'org.jpat.scuba.core',
+        'org.jpat.scuba.support.languages',
+        'org.jpat.scuba.analysisprovider.static.asm',
+        'org.jpat.scuba.analysisprovider.static.asm.scala',
+        'org.jpat.scuba.analysisprovider.static.bcel',
+        'org.jpat.scuba.analysisprovider.dynamic.asm',
+        'org.jpat.scuba.analysisprovider.dynamic.bcel',
+        'org.jpat.scuba.analysisprovider.extensions',
+        'org.jpat.scuba.configurationsprovider.extensions',
+        'scuba'
+
+project (':org.jpat.scuba.common').projectDir = new File(settingsDir, '../org.jpat.scuba.common')
+project (':org.jpat.scuba.core').projectDir = new File(settingsDir, '../org.jpat.scuba.core')
+project (':org.jpat.scuba.support.languages').projectDir = new File(settingsDir, '../org.jpat.scuba.support.languages')
+project (':org.jpat.scuba.analysisprovider.static.asm').projectDir = new File(settingsDir, '../org.jpat.scuba.analysisprovider.static.asm')
+project (':org.jpat.scuba.analysisprovider.static.asm.scala').projectDir = new File(settingsDir, '../org.jpat.scuba.analysisprovider.static.asm.scala')
+project (':org.jpat.scuba.analysisprovider.static.bcel').projectDir = new File(settingsDir, '../org.jpat.scuba.analysisprovider.static.bcel')
+project (':org.jpat.scuba.analysisprovider.dynamic.asm').projectDir = new File(settingsDir, '../org.jpat.scuba.analysisprovider.dynamic.asm')
+project (':org.jpat.scuba.analysisprovider.dynamic.bcel').projectDir = new File(settingsDir, '../org.jpat.scuba.analysisprovider.dynamic.bcel')
+project (':org.jpat.scuba.analysisprovider.extensions').projectDir = new File(settingsDir, '../org.jpat.scuba.analysisprovider.extensions')
+project (':org.jpat.scuba.configurationsprovider.extensions').projectDir = new File(settingsDir, '../org.jpat.scuba.configurationsprovider.extensions')
+project (':scuba').projectDir = new File(settingsDir, '../org.jpat.scuba.ui')

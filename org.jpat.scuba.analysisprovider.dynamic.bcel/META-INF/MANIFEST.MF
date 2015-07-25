@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: BCEL-based Instrumentation Tool
+Bundle-SymbolicName: org.jpat.scuba.analysisprovider.dynamic.bcel;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: JPAT ROSEMARY
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.jpat.scuba.external.bcel;bundle-version="1.0.0",
+ org.jpat.scuba.external.slf4j;bundle-version="1.0.0",
+ org.jpat.scuba.external.truezip;bundle-version="1.0.0",
+ org.jpat.scuba.support.languages;bundle-version="1.0.0",
+ org.jpat.scuba.common;bundle-version="1.0.0",
+ org.jpat.scuba.analysisprovider.static.bcel;bundle-version="1.0.0",
+ org.jpat.scuba.core;bundle-version="1.0.0"
+Export-Package: org.jpat.scuba.analysisprovider.dynamic.bcel.command.system

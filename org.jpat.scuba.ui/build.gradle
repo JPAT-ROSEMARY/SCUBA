@@ -1,0 +1,18 @@
+apply plugin: 'application'
+
+group = 'org.jpat.scuba'
+version = '1.0.0'
+
+mainClassName = 'org.jpat.scuba.ui.app.Application'
+
+dependencies {
+    compile project(':org.jpat.scuba.common')
+    compile project(':org.jpat.scuba.core')
+    compile project(':org.jpat.scuba.analysisprovider.extensions')
+    compile project(':org.jpat.scuba.configurationsprovider.extensions')
+}
+
+jar {
+    manifest.attributes 'Main-Class' : 'org.jpat.scuba.ui.app.Application'
+    manifest.attributes 'Class-Path' : configurations.compile.collect{it.getName()}.join(' ')
+}

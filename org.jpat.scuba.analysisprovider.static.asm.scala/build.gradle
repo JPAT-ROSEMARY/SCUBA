@@ -1,0 +1,8 @@
+group = 'org.jpat.scuba'
+version = '1.0.0'
+
+dependencies {
+    compile project(':org.jpat.scuba.core')
+    compile project(':org.jpat.scuba.support.languages')
+    compile files('../org.jpat.scuba.external.asm.scala/scala-asm-5.0.4-scala-2.jar')
+}

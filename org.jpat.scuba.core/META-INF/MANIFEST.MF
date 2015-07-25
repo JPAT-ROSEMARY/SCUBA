@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Core
+Bundle-SymbolicName: org.jpat.scuba.core;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Vendor: JPAT ROSEMARY
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.jpat.scuba.common;bundle-version="1.0.0",
+ org.jpat.scuba.external.truezip;bundle-version="1.0.0",
+ org.jpat.scuba.external.slf4j,
+ org.jpat.scuba.external.jmock;bundle-version="1.0.0",
+ org.jpat.scuba.external.mockito;bundle-version="1.0.0"
+Export-Package: org.jpat.scuba.core.benchmark.archive,
+ org.jpat.scuba.core.benchmark.configuration,
+ org.jpat.scuba.core.command.system,
+ org.jpat.scuba.core.controller,
+ org.jpat.scuba.core.controller.analysis,
+ org.jpat.scuba.core.controller.benchmark,
+ org.jpat.scuba.core.foundation,
+ org.jpat.scuba.core.model,
+ org.jpat.scuba.core.model.analysis,
+ org.jpat.scuba.core.model.analysis.config,
+ org.jpat.scuba.core.model.benchmark,
+ org.jpat.scuba.core.model.stats,
+ org.jpat.scuba.core.platform

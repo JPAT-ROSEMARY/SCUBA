@@ -1,0 +1,7 @@
+group = 'org.jpat.scuba'
+version = '1.0.0'
+
+dependencies {
+
+        compile files('../org.jpat.scuba.external.apache.commons/apache.commons.libs/io/commons-io-2.4.jar')
+}
