@@ -25,7 +25,7 @@ Another feature is to check the source code structure against certain Architectu
 
 To What Extent
 --
-Basically, the project started early 2012 for research & learning objectives.
+Basically, the project started in April 2012 for research & learning objectives. I am publishing it to support my profile.
 
 
 How Running SCUBA is Useful
