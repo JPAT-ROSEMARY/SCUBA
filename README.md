@@ -4,10 +4,18 @@ Simple CUstomisable Bytecode Analysis tool
 Description
 =
 
-A research project aims at learning static and dynamic bytecode analysis techniques using [ASM] (http://asm.ow2.org/) and [BCEL] (https://commons.apache.org/proper/commons-bcel/) frameworks and applying a couple of software engineering principles 
-including, MVC architecture paradigm, IoC concept and a couple of Design Patterns. I also practiced TDD with Mockito, JMock & Hamcrest. It is an application on how to make an extensible, reusable & configurable software system.
-Moreover, the project was used for a couple of experiments to evaluate and compare both ASM & BCEL frameworks.
-The results of the experiments are accompanied under `./org.jpat.scuba.ui/experiments/`.
+A research project aims at learning static and dynamic bytecode analysis techniques using [ASM] (http://asm.ow2.org/) and [BCEL] (https://commons.apache.org/proper/commons-bcel/) frameworks.
+
+#Motivations and Objectives
+To evaluate bytecode frameworks, apply a couple of software engineering principles including, MVC architecture paradigm, IoC concept and a couple of Design Patterns. Also, to practice TDD with Mockito, JMock & Hamcrest. 
+To git rid of being afraid of understanding JVM, Java language specifications and bytecode artifacts and also to make an application on how to produce an extensible, reusable and configurable software system.
+
+#Experiments
+Evaluating ASM and BCEL frameworks by SCUBA was a joyful part as conducted a couple of experiments to evaluate and compare both of them to each other.
+The results of the experiments are accompanied under `./org.jpat.scuba.ui/experiments/`. Programming against both frameworks' APIs taught me how easy and less error-prone is to utilise ASM.
+Also relatively comparing the results and having all analysers produce the same output is a nice thing to make sure that I used both ASM and BCEL correctly. 
+What is left is a higher level of assertion to check that my analyses do absolutely produce the correct result. Sometimes I used open source tools which analyse the bytecode instructions and produce different stats on Java programs to comare my results.
+I still find some differences and that needs me to dig more in bytecode engineering area.      
 
 Why Utilizing Two Bytecode Engineering Frameworks
 --
