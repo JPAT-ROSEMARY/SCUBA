@@ -51,4 +51,12 @@ Now, you might need to instantiate a Server Git Repo - bare repo
     git push origin master
     
     rosemary@kali:~/scrap$ git push origin master
+
+
+in case you forgot to add to ignore certain artefacts, here what you could do as examples:
+
+root@kali:/home/rosemary/JPAT-ROSEMARY/SCUBA# git rm --cached --ignore-unmatch **/.classpath
+root@kali:/home/rosemary/JPAT-ROSEMARY/SCUBA# git rm --cached --ignore-unmatch **/.project
+root@kali:/home/rosemary/JPAT-ROSEMARY/SCUBA# git rm --cached --ignore-unmatch **/.gradle/
+
     
