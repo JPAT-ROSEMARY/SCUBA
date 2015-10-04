@@ -28,8 +28,8 @@ I consider my knowledge and experience is still moderate as I did not do much wi
   
 Future Work
 --
-Take the potentials of ASM Framework to its maximum to check the intercommunications patterns of Object Oriented software systems against certain criterion.
-Another feature is to check the source code structure against certain Architecture paradigm like MVC. 
+Take the potentials of ASM Framework to its maximum to check the inter-communication patterns of Object Oriented software systems against certain criterion.
+Another feature could be added to SCUBA is the ability to check software code structure against certain Architecture Paradigm like MVC. This feature is not simple and could be divided to a couple of related features, for example, locating the code sites where rules of referenced architecture are violated. During my master's thesis research I noticed that not all Object Oriented inter-communication patterns have the same weights or dependency value, and therefore every dependency should be studied very well before marking it a violation if that appears to be against certain architecture rule. 
 
 To What Extent
 --
@@ -57,6 +57,8 @@ How to Run
 =
 
 * Execute the command Gradle clean compileJava build run in `./master` project
+  ** [1] `$ cd master`
+  ** [2] `$ gradle run`
 
 * In eclipse: consume `./org.jpat.scuba/eclipse.launch/Application.launch` with "Run Configurations..."
 
