@@ -14,7 +14,7 @@ To git rid of being afraid of understanding JVM, Java language specifications an
 Evaluating ASM and BCEL frameworks by SCUBA was a joyful part as conducted a couple of experiments to evaluate and compare both of them to each other.
 The results of the experiments are accompanied under `./org.jpat.scuba.ui/experiments/`. Programming against both frameworks' APIs taught me how easy and less error-prone is to utilise ASM.
 Also relatively comparing the results and having all analysers produce the same output is a nice thing to make sure that I used both ASM and BCEL correctly. 
-What is left is a higher level of assertion to check that my analyses do absolutely produce the correct result. Sometimes I used open source tools which analyse the bytecode instructions and produce different stats on Java programs to comare my results.
+What is left is a higher level of assertion to check that my analyses do absolutely produce the correct result. Sometimes I used open source tools which analyse the bytecode instructions and produce different stats on Java programs to compare my results.
 I still find some differences and that needs me to dig more in bytecode engineering area.      
 
 Why Utilizing Two Bytecode Engineering Frameworks
@@ -38,7 +38,7 @@ Basically, the project started in April 2012 for research & learning objectives.
 
 How Running SCUBA is Useful
 --
-Unfortuantelly, the model resulted from running SCUBA on a bytecode archive is not useful! And the analyses target trivial problems.  
+Unfortunately, the model resulted from running SCUBA on a bytecode archive is not useful! And the analyses target trivial problems.  
 As mentioned, this project is made for different purposes. However, SCUBA demonstrates how well the application of all concepts, techniques and methodologies pursued.
 
 How SCUBA can be Useful
@@ -56,11 +56,15 @@ I will be so glad to discuss your suggestions and ideas.
 How to Run
 =
 
-* Execute the command Gradle clean compileJava build run in `./master` project
-  ** [1] `$ cd master`
-  ** [2] `$ gradle run`
+Gradle way
+--
+  * Change to `./master` project folder
+    - [1] `$ cd master`
+    - [2] `$ gradle run`
 
-* In eclipse: consume `./org.jpat.scuba/eclipse.launch/Application.launch` with "Run Configurations..."
+In eclipse
+--
+ * [] Consume `./org.jpat.scuba/eclipse.launch/Application.launch` with "Run Configurations..."
 
 Prerequisites
 --
