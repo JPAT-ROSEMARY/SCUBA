@@ -73,13 +73,7 @@ SCUBA assumes the machine is configured as follows:
 * [2] Gradle 2.4
 * [3] Development IDE like eclipse - Kepler with Java 8 support or Luna
 
-Entry Point
---
-* Project driver:  `./org.jpat.scuba.ui`
-* Main class: `org.jpat.scuba.ui.app.Application`; with the relative path as `./org.jpat.scuba.ui/src/main/java/org/jpat/scuba/ui/app/Application.java`
-* Test cases will summarise the entry and internal structure
-
-SCUBA input
+SCUBA Program Input
 -
 * [1] Configurations file; check for an example `./org.jpat.scuba.ui/benchmark.examples/user.benchmark.properties`. 
 	Also, `./org.jpat.scuba.ui/src/main/resources/org/jpat/scuba/ui/benchmark/benchmark.properties`
@@ -89,8 +83,14 @@ SCUBA input
 * [2] Input bytecode archive (only two formats accepted Zip and Jar).
 	The prepared properties files above already pick some examples located in `/org.jpat.scuba.ui/benchmark.examples/java` and `/org.jpat.scuba.ui/benchmark.examples/scala`.
 
+Dev. Entry Point
+==
+* Project driver:  `./org.jpat.scuba.ui`
+* Main class: `org.jpat.scuba.ui.app.Application`; with the relative path as `./org.jpat.scuba.ui/src/main/java/org/jpat/scuba/ui/app/Application.java`
+* Test cases will summarise the entry and internal structure
+
 Issues
---
+==
 * (1) BCEL Framework library used by SCUBA is release version 5.2 which has not been updated yet to consider Java 8.
 * (2) Enhancement is required for the Concrete Exceptions in the common project
 * (3) Enhancement to the model in general, especially the Stats sub-model part
