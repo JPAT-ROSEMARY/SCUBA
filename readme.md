@@ -6,7 +6,7 @@ Simple CUstomisable Bytecode Analysis tool
 Description
 -----------
 
-A research project aims at learning static and dynamic bytecode analysis techniques using [ASM](http://asm.ow2.org) and [BCEL]:https://commons.apache.org/proper/commons-bcel/ frameworks.
+A research project aims at learning static and dynamic bytecode analysis techniques using [ASM](http://asm.ow2.org) and [BCEL](https://commons.apache.org/proper/commons-bcel/) frameworks.
 
 Motivations and Objectives
 --------------------------
