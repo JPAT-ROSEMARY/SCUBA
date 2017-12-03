@@ -26,6 +26,7 @@ Also relatively comparing the results and having all SCUBA's analysers produce t
 What is left is a higher level of assertion to check that my analyses do absolutely produce the correct result. Sometimes I used open source tools which analyse the bytecode instructions and produce different stats on Java programs to compare my results. I still find some differences between results. I got to dig more in bytecode engineering area.      
 
 ### SCUBA Analysers
+
 Two static and two dynamic analysers, makes a total of four analysers. Each analyser is generic. Let's say I want to use Static ASM Analyser, then this analyser can be extended to check certain facts about subject source code. For example, cyclic dependencies among classes. And for instrumentation one can define certain instructions to be instrumented using the generic SCUBA Dynamic ASM Analyser. The same can be done for the other two - SCUBA BCEL Analysers.  
 
 Why Utilizing Two Bytecode Engineering Frameworks
