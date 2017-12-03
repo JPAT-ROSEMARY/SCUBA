@@ -11,21 +11,22 @@ A research project aims at learning static and dynamic bytecode analysis techniq
 Motivations and Objectives
 --------------------------
 
-To evaluate bytecode frameworks, apply a couple of software engineering principles including, MVC architecture paradigm, IoC concept and a couple of Design Patterns. Also, to practice TDD with Mockito, JMock & Hamcrest. 
-To git rid of being afraid of understanding JVM, Java language specifications and bytecode artifacts and also to make an application on how to produce an extensible, reusable and configurable software system.
+To evaluate bytecode frameworks, apply a couple of software engineering principles including, MVC architecture paradigm, IoC concept and a couple of Design Patterns. To practice Test-Driven Development and Unit Testing with Mockito, JMock and Hamcrest. 
+To get rid of being afraid of understanding JVM, Java language specifications and bytecode artifacts and also to make an application on how to produce an extensible, reusable and configurable software system.
 
 Experiments
 -----------
 
-Evaluating ASM and BCEL frameworks by SCUBA was a joyful part as conducted a couple of experiments to evaluate and compare both of them to each other.
+Evaluating ASM and BCEL frameworks by SCUBA was a joyful part as I conducted a couple of experiments to evaluate and relatively compare them.
 
 Benchmark settings and the relative performance of each framework are published [here](./org.jpat.scuba.ui/experiments/Framework.Evaluation-ASM.vs.BCEL_in.Static.&.Dynamic.analysis.settings.Mar2014.xls.pdf).
 
-Programming against both frameworks' APIs taught me how easy and less error-prone is to utilise ASM.
-Also relatively comparing the results and having all analysers produce the same output is a nice thing to make sure that I used both ASM and BCEL correctly. 
-What is left is a higher level of assertion to check that my analyses do absolutely produce the correct result. Sometimes I used open source tools which analyse the bytecode instructions and produce different stats on Java programs to compare my results.
+Programming against both frameworks' APIs showed me how easy and less error-prone is to utilise ASM than BCEL.
+Also relatively comparing the results and having all SCUBA's analysers produce the same output is a nice thing to make sure that both ASM and BCEL are being correctly utilised. 
+What is left is a higher level of assertion to check that my analyses do absolutely produce the correct result. Sometimes I used open source tools which analyse the bytecode instructions and produce different stats on Java programs to compare my results. I still find some differences between results. I got to dig more in bytecode engineering area.      
 
-I still find some differences and that needs me to dig more in bytecode engineering area.      
+### SCUBA Analysers
+Two static and two dynamic analysers, makes a total of four analysers. Each analyser is generic. Let's say I want to use Static ASM Analyser, then this analyser can be extended to check certain facts about subject source code. For example, cyclic dependencies among classes. And for instrumentation one can define certain instructions to be instrumented using the generic SCUBA Dynamic ASM Analyser. The same can be done for the other two - SCUBA BCEL Analysers.  
 
 Why Utilizing Two Bytecode Engineering Frameworks
 -------------------------------------------------
