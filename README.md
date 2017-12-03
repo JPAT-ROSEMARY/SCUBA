@@ -28,6 +28,8 @@ Why Utilizing Two Bytecode Engineering Frameworks
 
 The goal was in the first place to compare those two frameworks to each other. I learned by experimenting with SCUBA, analysing and instrumenting many Java open source projects, that ASM is about 3 times faster than BCEL in average. 
 Moreover, the performance of ASM in instrumentation processes is also more than 3 times better than BCEL.
+> Experiments result are published in detail for both static and dynamic settings. Documents are located in path `./org.jpat.scuba.ui/experiments/`.
+
 I wanted to use only one business logic and program against both frameworks' APIs reusing the same core engine that I built as a platform.
 I got more greedy and extended the capability to analyse Scala bytecode files. 
 I consider my knowledge and experience is still moderate as I did not do much with bytecode engineering, as said it is only a simple, but customisable and extensible tool.
@@ -69,28 +71,27 @@ How to Run
 ### Gradle way
 
 ```
-   : Change to `./master` project folder
-     : [1] `$ cd master`
-     : [2] `$ gradle run`
+    Using `gradle run` in project folder `./master`
+ 
 ```
 
 ### In eclipse
 
 ```
-  : [] Consume `./org.jpat.scuba/eclipse.launch/Application.launch` with "Run Configurations..."
+  [] Consume `./org.jpat.scuba/eclipse.launch/Application.launch` with "Run Configurations..."
 ```
 
 ### Prerequisites
 
 ```
 SCUBA assumes the machine is configured as follows:
-* [1] Java 8
-* [2] Gradle 2.4
-* [3] Development IDE like eclipse - Kepler with Java 8 support or Luna
+ [1] Java 8
+ [2] Gradle 2.4
+ [3] Development IDE like eclipse - Kepler with Java 8 support or Luna
 ````
 
 
-### SCUBA Program Input
+### Program Input
 
 * [1] Configurations file; check for an example `./org.jpat.scuba.ui/benchmark.examples/user.benchmark.properties`. 
 	Also, `./org.jpat.scuba.ui/src/main/resources/org/jpat/scuba/ui/benchmark/benchmark.properties`
