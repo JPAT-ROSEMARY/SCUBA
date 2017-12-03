@@ -19,7 +19,7 @@ Experiments
 
 Evaluating ASM and BCEL frameworks by SCUBA was a joyful part as conducted a couple of experiments to evaluate and compare both of them to each other.
 
-The results of the experiments are accompanied [here](./org.jpat.scuba.ui/experiments/Framework.Evaluation-ASM.vs.BCEL_in.Static.&.Dynamic.analysis.settings.Mar2014.xls.pdf).
+Benchmark settings and the relative performance of each framework are published [here](./org.jpat.scuba.ui/experiments/Framework.Evaluation-ASM.vs.BCEL_in.Static.&.Dynamic.analysis.settings.Mar2014.xls.pdf).
 
 Programming against both frameworks' APIs taught me how easy and less error-prone is to utilise ASM.
 Also relatively comparing the results and having all analysers produce the same output is a nice thing to make sure that I used both ASM and BCEL correctly. 
@@ -32,7 +32,7 @@ Why Utilizing Two Bytecode Engineering Frameworks
 
 The goal was in the first place to compare those two frameworks to each other. I learned by experimenting with SCUBA, analysing and instrumenting many Java open source projects, that ASM is about 3 times faster than BCEL in average. 
 Moreover, the performance of ASM in instrumentation processes is also more than 3 times better than BCEL.
-> Benchmarking and Experiments results are published in detail for both static and dynamic settings. Documents are located in [here](./org.jpat.scuba.ui/experiments/Framework.Evaluation-ASM.vs.BCEL_in.Static.&.Dynamic.analysis.settings.Mar2014.xls.pdf).
+> Conclusion on Benchmarking and Experiments results is published for both static and dynamic settings [here](./org.jpat.scuba.ui/experiments/Framework.Evaluation-ASM.vs.BCEL_in.static.analysis.setting.doc.pdf).
 
 I wanted to use only one business logic and program against both frameworks' APIs reusing the same core engine that I built as a platform.
 I got more greedy and extended the capability to analyse Scala bytecode files. 
@@ -49,7 +49,6 @@ To What Extent
 
 Basically, the project started in April 2012 for research & learning objectives. I am publishing it to support my profile.
 
-
 How Running SCUBA is Useful
 ---------------------------
 
@@ -61,13 +60,11 @@ How SCUBA can be Useful
 
 Introduction on bytecode engineering and a bunch of practical examples on software engineering and object oriented design and programming principles. 
 
-
 How to Get Involved
 -------------------
 
 There are a couple of Test Case classes in each project. These test cases will give you a complete idea on the structure and logical connection of the project's modules.
 I will be so glad to discuss your suggestions and ideas.
-
 
 How to Run
 ----------
@@ -76,13 +73,12 @@ How to Run
 
 ```
     Using `gradle run` in project folder `./master`
- 
 ```
 
 ### In eclipse
 
 ```
-  [] Consume `./org.jpat.scuba/eclipse.launch/Application.launch` with "Run Configurations..."
+  Using `./org.jpat.scuba/eclipse.launch/Application.launch` with "Run Configurations..."
 ```
 
 ### Prerequisites
@@ -93,7 +89,6 @@ SCUBA assumes the machine is configured as follows:
  [2] Gradle 2.4
  [3] Development IDE like eclipse - Kepler with Java 8 support or Luna
 ````
-
 
 ### Program Input
 
