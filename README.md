@@ -6,7 +6,7 @@ Simple CUstomisable Bytecode Analysis tool
 Description
 -----------
 
-A research project aims at learning static and dynamic bytecode analysis techniques using [ASM] (http://asm.ow2.org/) and [BCEL] (https://commons.apache.org/proper/commons-bcel/) frameworks.
+A research project aims at learning static and dynamic bytecode analysis techniques using [ASM]: http://asm.ow2.org and [BCEL]: https://commons.apache.org/proper/commons-bcel/ frameworks.
 
 Motivations and Objectives
 --------------------------
@@ -18,9 +18,13 @@ Experiments
 -----------
 
 Evaluating ASM and BCEL frameworks by SCUBA was a joyful part as conducted a couple of experiments to evaluate and compare both of them to each other.
-The results of the experiments are accompanied [here] (org.jpat.scuba.ui/experiments/). Programming against both frameworks' APIs taught me how easy and less error-prone is to utilise ASM.
+
+The results of the experiments are accompanied [here] (./org.jpat.scuba.ui/experiments/Framework.Evaluation-ASM.vs.BCEL_in.Static.&.Dynamic.analysis.settings.Mar2014.xls.pdf).
+
+Programming against both frameworks' APIs taught me how easy and less error-prone is to utilise ASM.
 Also relatively comparing the results and having all analysers produce the same output is a nice thing to make sure that I used both ASM and BCEL correctly. 
 What is left is a higher level of assertion to check that my analyses do absolutely produce the correct result. Sometimes I used open source tools which analyse the bytecode instructions and produce different stats on Java programs to compare my results.
+
 I still find some differences and that needs me to dig more in bytecode engineering area.      
 
 Why Utilizing Two Bytecode Engineering Frameworks
@@ -28,7 +32,7 @@ Why Utilizing Two Bytecode Engineering Frameworks
 
 The goal was in the first place to compare those two frameworks to each other. I learned by experimenting with SCUBA, analysing and instrumenting many Java open source projects, that ASM is about 3 times faster than BCEL in average. 
 Moreover, the performance of ASM in instrumentation processes is also more than 3 times better than BCEL.
-> Benchmarking and Experiments results are published in detail for both static and dynamic settings. Documents are located in [here] (org.jpat.scuba.ui/experiments/).
+> Benchmarking and Experiments results are published in detail for both static and dynamic settings. Documents are located in [here] (./org.jpat.scuba.ui/experiments/Framework.Evaluation-ASM.vs.BCEL_in.Static.&.Dynamic.analysis.settings.Mar2014.xls.pdf).
 
 I wanted to use only one business logic and program against both frameworks' APIs reusing the same core engine that I built as a platform.
 I got more greedy and extended the capability to analyse Scala bytecode files. 
