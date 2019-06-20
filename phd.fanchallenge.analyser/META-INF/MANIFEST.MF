@@ -5,4 +5,4 @@ Bundle-SymbolicName: phd.fanchallenge.analyser;singleton:=true
 Bundle-Version: 1.0.0
 Bundle-Vendor: JPAT ROSEMARY
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Require-Bundle: org.jpat.scuba.external.slf4j;bundle-version="1.0.0"
+Require-Bundle: org.jpat.scuba.external.slf4j;bundle-version="1.0.1"

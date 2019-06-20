@@ -18,6 +18,6 @@ Require-Bundle: org.jpat.scuba.analysisprovider.dynamic.asm;bundle-version="1.0.
  org.jpat.scuba.external.bcel;bundle-version="1.0.0",
  org.jpat.scuba.external.jmock;bundle-version="1.0.0",
  org.jpat.scuba.external.mockito;bundle-version="1.0.0",
- org.jpat.scuba.external.slf4j;bundle-version="1.0.0",
+ org.jpat.scuba.external.slf4j;bundle-version="1.0.1",
  org.jpat.scuba.external.truezip;bundle-version="1.0.0",
  org.jpat.scuba.support.languages;bundle-version="1.0.0"

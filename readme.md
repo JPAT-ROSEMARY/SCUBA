@@ -79,6 +79,17 @@ How to Run
 
 ### In eclipse
 
+0. Add Plugin 'eclipse' to Gradle Build
+
+0. Evaluate the following command in project folder `./master`
+
+```
+gradle eclipse 
+```
+0. Using Eclipse IDE import the project
+
+0. Run accompanied Sample as follows
+
 ```
   Using `./org.jpat.scuba/eclipse.launch/Application.launch` with "Run Configurations..."
 ```
