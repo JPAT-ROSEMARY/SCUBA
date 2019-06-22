@@ -20,7 +20,7 @@ subprojects {
 	apply plugin : 'eclipse'
 	apply plugin : 'java'
 	apply plugin : 'pmd'
-	//apply plugin : 'checkstyle'
+	apply plugin : 'checkstyle'
 	//apply plugin : 'com.github.spotbugs'
 
 	repositories {
@@ -60,9 +60,9 @@ subprojects {
 		]
 	}
 
-	/*checkstyle {
-		 configFile = rootProject.file('config/checkstyle/checkstyle.xml')
-	}*/
+	checkstyle {
+		configFile = rootProject.file('config/checkstyle/checkstyle.xml')
+	}
 
 	/*spotbugs {
 		ignoreFailures=true

@@ -74,24 +74,24 @@ How to Run
 ### Gradle way
 
 ```
-    Using `gradle run` in project folder `./master`
+Using `gradle run` in project folder `./master`
 ```
 
 ### In eclipse
 
-0. Add Plugin 'eclipse' to Gradle Build
+1. Add Plugin 'eclipse' to Gradle Build
 
-0. Evaluate the following command in project folder `./master`
+2. Evaluate the following command in project folder `./master`
 
 ```
 gradle eclipse 
 ```
-0. Using Eclipse IDE import the project
+3. Using Eclipse IDE import the project
 
-0. Run accompanied Sample as follows
+4. Run accompanied Sample as follows
 
 ```
-  Using `./org.jpat.scuba/eclipse.launch/Application.launch` with "Run Configurations..."
+Using `./org.jpat.scuba/eclipse.launch/Application.launch` with "Run Configurations..."
 ```
 
 ### Prerequisites
