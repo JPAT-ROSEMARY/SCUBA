@@ -52,3 +52,4 @@ public class BytecodeStats4All extends ScubaStats
         return this.artifactTargetedCountAll;
     }
 }
+

@@ -11,3 +11,4 @@ public class BCELMethodInstrumentor extends BCELMethodAnalyser
         super(benchamrk, targetedInstrumentation);
     }
 }
+

@@ -113,3 +113,4 @@ public final class ASMMethodAnalyser extends MethodVisitor implements IMethodAna
         ((AbstractTargetedStats) this.targetedAnalysis).performSimpleStatsAnalysisOnMethod();
     }
 }
+

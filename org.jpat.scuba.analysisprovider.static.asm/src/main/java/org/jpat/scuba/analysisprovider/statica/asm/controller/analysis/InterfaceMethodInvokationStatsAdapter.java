@@ -25,3 +25,4 @@ public final class InterfaceMethodInvokationStatsAdapter extends StatsAnalysisAd
         super.classParser = new ASMClassParser(getFANChallenge(), methodAnalyser);
     }
 }
+

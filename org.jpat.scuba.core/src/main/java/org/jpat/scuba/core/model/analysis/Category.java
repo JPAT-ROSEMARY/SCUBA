@@ -26,3 +26,4 @@ public enum Category implements ISelfIdentifier
         return this.naturalValue;
     }
 }
+

@@ -21,3 +21,4 @@ public class BCELMethodAnalyser extends AbstractBCELMethodAnalyser
         return new Object();
     }
 }
+

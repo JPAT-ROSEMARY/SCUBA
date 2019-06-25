@@ -14,3 +14,4 @@ public interface IScubaController extends IExtension
 
     void instantiateBytecodeProvider(final IBytecodeProvider bytecodeProvider);
 }
+

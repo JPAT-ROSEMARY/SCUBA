@@ -23,3 +23,4 @@ public abstract class AbstractBCELClassParser implements IClassParser
 
     protected abstract void pareseInternal(final ClassGen classGen, final Method nextMethod, final MethodGen nextMethodGen);
 }
+

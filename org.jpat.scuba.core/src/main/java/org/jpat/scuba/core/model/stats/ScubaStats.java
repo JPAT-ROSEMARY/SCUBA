@@ -15,3 +15,4 @@ public abstract class ScubaStats extends ScubaAnalysisOutcome
         return this.getClass().getSimpleName();
     }
 }
+

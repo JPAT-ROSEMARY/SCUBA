@@ -62,3 +62,4 @@ public abstract class AnalysisProvider implements IAnalysisProvider
         return new AnalysisExtension(benchmark, getAnalyserIds());
     }
 }
+

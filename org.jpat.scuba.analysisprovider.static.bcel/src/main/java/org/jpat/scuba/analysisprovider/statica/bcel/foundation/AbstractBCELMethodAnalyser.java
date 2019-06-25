@@ -18,3 +18,4 @@ public abstract class AbstractBCELMethodAnalyser implements IMethodAnalyser
         this.targetedAnalysis = targetedAnalysis;
     }
 }
+
