@@ -42,7 +42,7 @@
     <!-- used in integration testing -->
     <slf4j.api.minimum.compatible.version>1.6.0</slf4j.api.minimum.compatible.version>
     <cal10n.version>0.8.1</cal10n.version>
-    <log4j.version>1.2.17</log4j.version>
+     
     <logback.version>1.0.13</logback.version>
     <junit.version>4.13.1</junit.version>
     <maven-site-plugin.version>3.3</maven-site-plugin.version>
@@ -63,12 +63,12 @@
     <module>slf4j-simple</module>
     <module>slf4j-nop</module>
     <module>slf4j-jdk14</module>
-    <module>slf4j-log4j12</module>
+   
     <module>slf4j-jcl</module> 
-    <module>slf4j-android</module>
+    
     <module>slf4j-ext</module>
     <module>jcl-over-slf4j</module>
-    <module>log4j-over-slf4j</module>
+     
     <module>jul-to-slf4j</module>
     <module>osgi-over-slf4j</module>
     <module>integration</module>
@@ -98,12 +98,6 @@
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-jdk14</artifactId>
         <version>${project.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>log4j</groupId>
-        <artifactId>log4j</artifactId>
-        <version>${log4j.version}</version>
       </dependency>
 
       <dependency>
@@ -295,10 +289,7 @@
                     <packages>org.slf4j.bridge</packages>
                   </group>
 
-                  <group>
-                    <title>Apache log4j</title>
-                    <packages>org.apache.log4j:org.apache.log4j.*</packages>
-                  </group>
+                   
                 </groups>
               </configuration>
             </plugin>
